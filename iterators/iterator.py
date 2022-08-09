@@ -1,6 +1,6 @@
 class PowerIterator:
     """ This custom iterator generates numbers in range [0, limit] to the defined power """
-    def __init__(self, power=2, limit=5):
+    def __init__(self, power: int = 2, limit: int = 5):
         self.number = 0
         self.power = power
         self.limit = limit

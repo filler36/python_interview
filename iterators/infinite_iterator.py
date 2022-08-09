@@ -1,6 +1,6 @@
 class InfinitePowerIterator:
     """ This custom iterator generates numbers in range [0, infinite] to the defined power """
-    def __init__(self, power=2):
+    def __init__(self, power: int = 2):
         self.number = 0
         self.power = power
 
