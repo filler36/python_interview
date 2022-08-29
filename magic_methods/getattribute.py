@@ -5,7 +5,7 @@ class Point:
 
     def __getattribute__(self, item):
         """
-        This magic method is automatically executed when you are accessing instance variable
+        This magic method is automatically executed when you are accessing instance attribute
         We can somehow rewrite default behavior of this method. For example, we can restrict access to attribute 'y'
         """
         print('__getattribute__ was called')
