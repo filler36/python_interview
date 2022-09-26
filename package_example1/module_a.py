@@ -1,4 +1,5 @@
-print(__name__)
+print(__name__)  # top-level script or python -m -> '__main__'  /  main.py -> 'package_example1.module_a'
+print(__package__)  # top-level script -> None  /  main.py or python -m -> package_example1
 
 # From: https://stackoverflow.com/questions/14132789/relative-imports-for-the-billionth-time
 
