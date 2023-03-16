@@ -16,9 +16,9 @@ class Person:
         del self.__name
 
 p = Person('Filip', 33)
-print(p.__dict__)
-print(p.name)  # getter
-p.name = 'Philip'  # setter
+print(p.__dict__)  # {'_Person__name': 'Filip', '_Person__age': 33}
+print(p.name)  # getter called
+p.name = 'Philip'  # setter called
 print(p.name)
-del p.name
-print(p.__dict__)
+del p.name  # deleter called
+print(p.__dict__)  # {'_Person__age': 33}
