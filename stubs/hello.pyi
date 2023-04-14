@@ -1,0 +1,3 @@
+# This a stub file
+
+def hello(name: str) -> str: ...
