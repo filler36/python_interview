@@ -31,6 +31,6 @@ def divide(a, b):
     print(a/b)
 
 
-summarize(2, 2)
+summarize(2, 2)  # equal to func_logger('start')(summarize)(2, 2) if summarize would be defined without decorator
 subtract(6, 3)
 divide(25, 5)
