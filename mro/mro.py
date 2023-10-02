@@ -9,7 +9,7 @@ class B1:
 
 
 class A(A1):
-    #x = 'A'
+    x = 'A'
     pass
 
 
@@ -25,4 +25,4 @@ class C(A, B):
 
 # Method Resolution Order: C -> A -> A1 -> B -> B1
 # The same order for methods
-print(C.x)
+print(C.__mro__)  # (<class '__main__.C'>, <class '__main__.A'>, <class '__main__.A1'>, <class '__main__.B'>, <class '__main__.B1'>, <class 'object'>)
