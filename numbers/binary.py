@@ -3,3 +3,4 @@ print(a)  # 7
 print(int(a))  # 7
 print(bin(a))  # 0b111 bin() returns str not int
 print(f'{a:b}')  # 111
+print(f'{a:04b}')  # 0111
