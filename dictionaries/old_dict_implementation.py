@@ -22,7 +22,7 @@ HASH = hash('name') -> 'name'.__hash__() -> Example: 7523062142597211918 ->
 -> 0b110100001100111010010010010100011101000101100100010011100001110 - hash of 'name' represented in binary
 MASK = N - 1 = 7(decimal) = 111(binary), where N is number of slots/buckets
 BUCKET_INDEX = HASH & MASK, where & is BITWISE AND operator
-BUCKET_INDEX = 0b110100001100111010010010010100011101000101100100010011100001110 & 111 = 111(binary) = 5(decimal)
+BUCKET_INDEX = 0b110100001100111010010010010100011101000101100100010011100001110 & 111 = 101(binary) = 5(decimal)
 hashtable:
 [   ],
 [   ],
