@@ -17,6 +17,8 @@ t = Thread(target=Countdown(5), name='First thread')  # We can set Thread name
 print(t.name)  # First thread will be printed
 print(t.ident)  # Unique identificator of the thread = None -> It will be set after starting
 print(threading.enumerate())  # [<_MainThread(MainThread, started 21468)>]
+print(t.is_alive())  # False
 t.start()
+print(t.is_alive())  # True
 print(t.ident)  # Unique identificator of the thread
 print(threading.enumerate())  # [<_MainThread(MainThread, started 35528)>, <Thread(First thread, started 2072)>]
