@@ -7,8 +7,7 @@ method3 is not added here to the __all__ attribute.
 In that case it will not be imported during `from some_package import *` call
 """
 
-from packages.package_example_all.some_package1.module1 import method1
-from packages.package_example_all.some_package1.module2 import method2, method3
+from packages.package_example_all.some_package1.module1 import method1, method2, method3
 
 
 __all__ = ('method1', 'method2')
