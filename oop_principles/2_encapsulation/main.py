@@ -25,6 +25,9 @@ class Person:  # Here is example of encapsulation - Class
         self.__age = age
 
     def say_hello(self):  # We encapsulated code (method) that works with the data (age) into a Class
+        return self.__create_hello_message()
+
+    def __create_hello_message(self):  # This protected method is restricted to use out of the class
         return f'Hello, I am {self.age} years old'
 
 
