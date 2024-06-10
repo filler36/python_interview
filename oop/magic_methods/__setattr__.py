@@ -9,7 +9,7 @@ class Point:
         We can also somehow rewrite the logic of this method. For example, we can restrict to set some attribute names
         We can also check values for correctness
         """
-        print('__setattr__ was called')
+        print(f'__setattr__ was called with {key}={value}')
         if key not in ('x', 'y'):  # Restrict to set attribute names different from 'x' or 'y'
             raise AttributeError('Invalid name of attribute')
         if not isinstance(value, int):  # Accept only integer values
@@ -19,12 +19,18 @@ class Point:
         # self.__dict__[key] = value  # Correct, but not recommended
         object.__setattr__(self, key, value)  # The best native way to set attribute
 
-
+print('Instantiate Point')
 p = Point(1, 2)
 
-# Accessing instance attributes
+print()
 p.x = 3
 print(p.x)
-p.x = '4'  # Raise 'ValueError: Invalid value type'
-#p.z = 4  # Raise 'AttributeError: Invalid name of attribute'
+
+print()
+setattr(p, 'x', 4)  # setattr function will call __setattr
+print(p.x)
+
+print()
+p.x = '5'  # Raise 'ValueError: Invalid value type'
+#p.z = 5  # Raise 'AttributeError: Invalid name of attribute'
 

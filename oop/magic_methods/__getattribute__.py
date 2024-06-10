@@ -8,7 +8,7 @@ class Point:
         This magic method is automatically executed when you are accessing instance attribute
         We can somehow rewrite default behavior of this method. For example, we can restrict access to attribute 'y'
         """
-        print('__getattribute__ was called')
+        print(f'__getattribute__ was called with {item}')
         if item == 'y':
             raise ValueError('Access denied')  # Restrict access to attribute 'y'
         return object.__getattribute__(self, item)
