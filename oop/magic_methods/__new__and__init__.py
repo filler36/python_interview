@@ -16,4 +16,5 @@ class Point:
         self.x = x
         self.y = y
 
-p = Point(1,2)
+
+p = Point(1, 2)
