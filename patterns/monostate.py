@@ -24,3 +24,5 @@ print(m2.id)  # 2
 m2.x = 'test'
 print(m1.x)  # test
 print(m2.x)  # test
+
+print(id(m1) == id(m2))  # False, since they are different objects (unlike Singleton pattern)
