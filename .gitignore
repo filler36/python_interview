@@ -1,5 +1,4 @@
 venv
 .idea
-test*.py
 *.pyc
 __pycache__
