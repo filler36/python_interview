@@ -44,12 +44,17 @@ public class Main {
 This also can be accomplished via function overloading
 public class Main {
     public static void main(String[] args) {
-        printItem(42);        // Works with integers
-        printItem("Hello");   // Works with strings
+        printItem(42);          // Calls the version that takes an integer
+        printItem("Hello");     // Calls the version that takes a string
     }
 
-    public static <T> void printItem(T item) {
-        System.out.println(item);
+    // Overloaded methods
+    public static void printItem(int item) {
+        System.out.println("Integer: " + item);
+    }
+
+    public static void printItem(String item) {
+        System.out.println("String: " + item);
     }
 }
 """
