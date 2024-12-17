@@ -1,7 +1,9 @@
 """
-What is Polymorphism in Python
-Polymorphism allows objects of different types to be treated similarly.
-In other words, polymorphism allows objects to be treated as a single type of object,
-even if they are of different types.
-This means that a single set of code can handle any object, even if the objects are of different types.
+Polymorphism is the ability of a function,
+method, or operator to take on multiple forms
+and behave differently based on the context
+in which it is used.
+It allows the same interface or entity
+to perform various tasks, providing flexibility
+and reusability in different scenarios.
 """
